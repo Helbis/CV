@@ -1,0 +1,20 @@
+:root{
+    --clr-background : #282828;
+    --clr-black : #282828;
+    --clr-blue : #458588;
+    --clr-brightBlack : #928374;
+    --clr-brightBlue : #83A598;
+    --clr-brightCyan : #8EC07C;
+    --clr-brightGreen : #B8BB26;
+    --clr-brightPurple : #D3869B;
+    --clr-brightRed : #FB4934;
+    --clr-brightWhite : #EBDBB2;
+    --clr-brightYellow : #FABD2F;
+    --clr-cyan : #689D6A;
+    --clr-foreground : #EBDBB2;
+    --clr-green : #98971A;
+    --clr-purple : #B16286;
+    --clr-red : #CC241D;
+    --clr-white : #A89984;
+    --clr-yellow : #D79921;
+}
