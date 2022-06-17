@@ -174,4 +174,4 @@ abbr {
     
     transition: font-weight 100ms ease-in-out;
 }
-a
+abbr:hover, abbr:active {font-weight: bold}
