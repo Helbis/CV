@@ -1,0 +1,177 @@
+html, body {
+    padding: 0;
+    background-color: var(--clr-background);
+    
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: auto;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    width: fit-content;
+    
+    background-color: var(--clr-background);
+    box-shadow: 0 0 2rem 2rem var(--clr-background);
+    
+    position: sticky;
+    top: 2rem;
+/*     bottom: auto; */
+    
+    font-size: 2.5rem;
+    color: var(--clr-yellow);
+    
+    margin-inline: auto;
+}
+
+img {
+    display: block;
+    
+    position: sticky;
+    top: 2rem;
+    margin-left: 2rem;
+    
+    border: 2px solid var(--clr-foreground);
+    box-shadow: 0 0 1rem 0.01rem var(--clr-foreground);
+    
+    max-width: 10rem;
+    
+/*     border-radius: 82% 18% 80% 20% / 20% 82% 18% 80%; */
+    border-radius: 50%;
+    transition: border-radius 800ms ease-in-out;
+}
+
+/* img:hover, img:active { border-radius: 76% 24% 21% 79% / 16% 40% 60% 84% } */
+img:hover, img:active { border-radius: 25% }
+
+main {
+    margin-top: 2rem;
+    margin-inline: auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.sideBar, .main {
+    padding: 1rem;
+    flex-basis: 18rem;
+    flex-shrink: 1;
+}
+
+.main {
+    flex-basis: 18rem;
+    flex-grow: 0.8;
+}
+
+.langList {
+    display: flex;
+    gap: 3rem;
+    padding-left: 3rem;
+}
+
+/* Flag icons from https://www.alt-codes.net/flags */
+.polish::marker  { content: "\1F1F5 \1F1F1" }
+.english::marker { content: "\1F1FA \1F1F8" }
+.spanish::marker { content: "\1F1EA \1F1F8" }
+
+/* TODO */
+dt {
+    color: var(--clr-brightBlue);
+}
+
+dd {
+    color: var(--clr-white);
+    margin-left: 2rem;
+}
+
+dd > ul {
+    margin: 1rem;
+    padding: 0; 
+}
+
+details {
+    margin-top: 1rem;
+    max-width: 40rem;
+}
+
+details > ul > li {
+    background-color: var(--clr-background);
+    
+    margin-top: 0.5rem;
+    padding: 0.8rem;
+    border: 1px solid var(--clr-foreground);
+    
+    transition: transform 500ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: box-shadow 175ms cubic-bezier(0.25, 0.1, 0.25, 1) 100ms;
+}
+
+details > ul > li:hover,
+details > ul > li:active {
+    font-size: 1.1rem;
+    transform: translateY(-0.5rem);
+    
+    box-shadow:
+        0.3rem 0.3rem var(--clr-white),
+        -0.3rem -0.3rem 1rem 0.8rem var(--clr-black);
+}
+
+li {
+    color: var(--clr-white);
+}
+
+li.li-no-marker::marker { content: "" }
+
+.fa_brands::marker,
+.fa_icon::marker,
+.icon::marker { font-size: 1em }
+
+/* Fonts */
+* { font-family: "Sans" }
+.fa_brands::marker { font-family: "Font Awesome Brands" }
+.fa_icon::marker { font-family: "Font Awesome Icons" }
+.icon::marker { font-family: "All the icons" }
+
+a { color: var(--clr-purple) }
+a:hover, a:active { color: var(--clr-brightPurple) }
+
+a.a-full-width { display: block }
+
+.pad-left { padding-left: 0.5em }
+
+/* CONTACT ME */
+#github::marker {   content: "\f09b" }
+#linkedin::marker { content: "\f08c" }
+#mail::marker {     content: "\40" }
+#phone::marker {    content: "\f095" }
+
+/* PROGRAMMING SKILLS */
+#git::marker {    content: "\E907" }
+#vim::marker {    content: "\f095" }
+#google::marker { content: "\f1a0" }
+#c-cpp::marker {  content: "\E915" }
+#shell::marker {  content: "\E916" }
+#python::marker { content: "\f3e2" }
+#html::marker {   content: "\E932" }
+#css::marker {    content: "\E91B" }
+#js::marker {     content: "\E923" }
+#sql::marker {    content: "\f1c0" }
+
+h2 {
+    padding-top: 0.8rem;
+    padding-bottom: 0.25rem;
+    
+    font-size: 1.25rem;
+    color: var(--clr-cyan);
+}
+
+abbr {
+    text-decoration: underline dotted var(--clr-brightBlack) 1px;
+    
+    transition: font-weight 100ms ease-in-out;
+}
+a
