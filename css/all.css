@@ -44,7 +44,6 @@
         --faded_orange:     #af3a03;
 }
 
-
 @media screen and (prefers-color-scheme: light) and (min-color: 8) {
     :root {
         --clr-background:       var(--light0);
