@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>CV - FILIP HELBIG</title>
         <meta name="description" content="Website presenting my resume">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="color-scheme" content="dark light">
 
+        <title>CV - FILIP HELBIG</title>
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
@@ -33,6 +34,20 @@
              src: url("fonts/all-the-icons/all-the-icons.ttf") ;
          }
         </style>
+
+        <!-- <script type="text/javascript">
+             // When the user scrolls down 50px from the top of the document, resize the header's font size
+             window.onscroll = function() {scrollFunction()};
+
+             function scrollFunction() {
+             if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+             document.getElementsByTagName("header")[0].style.max-height = "10rem";
+             console.log("Scroll");
+             } else {
+             document.getElementsByTagName("header")[0].style.max-height = "20rem";
+             }
+             }
+             </script> -->
 
         <!--[if lt IE 8]>
             <p class="browserupgrade">
@@ -97,7 +112,7 @@
                 <section>
                     <h2>EXPERIENCE</h2>
                     <dl>
-                        <dt>LPE – <i>IT support and <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> resource creator</i> (<time datetime="2021-02">February 2021</time> → <time datetime="2022-03">March 2022</time>)</dt>
+                        <dt>LPE – <i>IT support and <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> resource creator</i> (from <time datetime="2021-02">February 2021</time> to <time datetime="2022-03">March 2022</time>)</dt>
                         <dd>
                             <details>
                                 <summary>My responsibilities</summary>
@@ -114,10 +129,67 @@
                     <h2>PROJECTS</h2>
                     <dl>
                         <dt>Mathup conference – speaker</dt>
-                        <dd>The goal of this project was to create math based game that would aid the learning of school-aged kids.</dd>
+                        <dd>
+                            <details>
+                                <summary>Math card game</summary>
+                                <ul>
+                                    <li class="li-no-marker">
+                                        The goal of this project was to create math based game that would help students learn by playing.
+                                    </li>
+                                    <li class="li-no-marker">
+                                        The game that we (<i>as a team</i>) have designed, would be played with cards with different level of a problem to solve.
+                                        It would be chosen based on the roll of the die and if not solved would push the player back.
+                                    </li>
+                                    <li class="li-no-marker">
+                                        Player would move their piece along the board until they place it at the finish line.
+                                    </li>
+                                </ul>
+                            </details>
+                        </dd>
 
                         <dt><abbr title="Problem Based Learning">PBL</abbr> – Escape room</dt>
-                        <dd>This project was aimed at problems faced by escape room’s attendees, game design and safety.</dd>
+                        <dd>
+                            <details>
+                                <summary>Escape room solution</summary>
+                                <ul>
+                                    <li class="li-no-marker">
+                                        For this project problems were not clearly stated, we had to learn what are the potential problems.
+                                    </li>
+                                    <li class="li-no-marker">
+                                        We were able to ask escape room's owner questions about it's functionality and design,
+                                        problems that he encountered and what they usually do to make them safe and fun.
+                                    </li>
+                                    <li class="li-no-marker">
+                                        After many meetings with brainstorming and individual research, we have decided to
+                                        approach it as a problem in game design.
+                                    </li>
+                                    <li class="li-no-marker">
+                                        Our solution was a creation of our own escape room, which had puzzles of different types, such as electronics or cryptography.
+                                    </li>
+                                </ul>
+                            </details>
+                        </dd>
+
+                        <dt>Database for wine storage - WineScan</dt>
+                        <dd>
+                            <details>
+                                <summary>My Bachelor's thesis</summary>
+                                <ul>
+                                    <li class="li-no-marker">
+                                        I was tasked with creation of database system for storage and management of wine data.
+                                    </li>
+                                    <li class="li-no-marker">
+                                        I carried it out by creating a webapp, which I called <b>WineScan</b>.
+                                        This app allowed the user to view cards with different types of wine, their basic parameters
+                                        and see how many there are left.
+                                        Deletion and addition of wine bottles and types was also supported.
+                                    </li>
+                                    <li class="li-no-marker">
+                                        I used vanilla HTML, CSS and Javascript after instructions from my supervisor.
+                                    </li>
+                                </ul>
+                            </details>
+                        </dd>
                     </dl>
                 </section>
 
@@ -138,12 +210,25 @@
                         <dd>
                             <ul>
                                 <li class="li-no-marker">
+                                    During this study course I have learned:
+                                    <ul>
+                                        <li class="li-no-marker">Electronics</li>
+                                        <li class="li-no-marker">Programming in <a href="#PROGRAMMING">such</a> languages</li>
+                                        <li class="li-no-marker">Combined as <abbr title="Field Programmable Gate Array">FPGA</abbr></li>
+                                        <li class="li-no-marker">Database management</li>
+                                        <li class="li-no-marker">Basics of telecommunications</li>
+                                    </ul>
+                                </li>
+                                <li class="li-no-marker">
                                     <details>
                                         <summary>Lodz University of Technology ( <abbr title="International Faculty of Engineering"><a target="_blank" href="https://www.ife.p.lodz.pl/">IFE</a></abbr> )</i></summary>
                                         <ul>
-                                            <li class="li-no-marker">I was the <b>Senior of the year</b></li>
-                                            <li class="li-no-marker">My responisibilites were to organize schedules and mediate communication between professors and students.</li>
-                                            <li class="li-no-marker">I would help other students get in touch with professors and learn about details concerning exams.</li>
+                                            <li class="li-no-marker">
+                                                I was the <b>Senior of the year</b>
+                                            </li>
+                                            <li class="li-no-marker">
+                                                I would help other students get in touch with professors and learn about details concerning exams.
+                                            </li>
                                         </ul>
                                     </details>
                                 </li>
@@ -163,7 +248,7 @@
                     </dl>
                 </section>
 
-                <section>
+                <section id="PROGRAMMING">
                     <h2>PROGRAMMING SKILLS</h2>
                     <ul>
                         <li class="icon pad-left" id="git">Git and github</li>
