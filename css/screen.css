@@ -23,7 +23,7 @@ h1 {
 /*     bottom: auto; */
     
     font-size: 2.5rem;
-    color: var(--clr-yellow);
+    color: var(--neutral_yellow);
     
     margin-inline: auto;
 }
@@ -79,13 +79,15 @@ main {
 .english::marker { content: "\1F1FA \1F1F8" }
 .spanish::marker { content: "\1F1EA \1F1F8" }
 
-/* TODO */
+
 dt {
-    color: var(--clr-brightBlue);
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    color: var(--bright_blue);
 }
 
 dd {
-    color: var(--clr-white);
+    color: var(--light4);
     margin-left: 2rem;
 }
 
@@ -97,6 +99,20 @@ dd > ul {
 details {
     margin-top: 1rem;
     max-width: 40rem;
+}
+
+summary {
+    background-color: var(--clr-background);
+/*     color: var(--clr-foreground); */
+    
+    padding: 0.3rem;
+    width: fit-content;
+    border: 1px solid var(--clr-foreground);
+}
+summary:hover,
+summary:active {
+    background-color: var(--clr-foreground);
+    color: var(--clr-background);
 }
 
 details > ul > li {
@@ -116,12 +132,12 @@ details > ul > li:active {
     transform: translateY(-0.5rem);
     
     box-shadow:
-        0.3rem 0.3rem var(--clr-white),
-        -0.3rem -0.3rem 1rem 0.8rem var(--clr-black);
+        0.3rem 0.3rem var(--clr-foreground),
+        -0.3rem -0.3rem 1rem 0.8rem var(--clr-background);
 }
 
 li {
-    color: var(--clr-white);
+    color: var(--light4);
 }
 
 li.li-no-marker::marker { content: "" }
@@ -136,8 +152,8 @@ li.li-no-marker::marker { content: "" }
 .fa_icon::marker { font-family: "Font Awesome Icons" }
 .icon::marker { font-family: "All the icons" }
 
-a { color: var(--clr-purple) }
-a:hover, a:active { color: var(--clr-brightPurple) }
+a { color: var(--neutral_purple) }
+a:hover, a:active { color: var(--bright_purple) }
 
 a.a-full-width { display: block }
 
@@ -166,11 +182,11 @@ h2 {
     padding-bottom: 0.25rem;
     
     font-size: 1.25rem;
-    color: var(--clr-cyan);
+    color: var(--neutral_aqua);
 }
 
 abbr {
-    text-decoration: underline dotted var(--clr-brightBlack) 1px;
+    text-decoration: underline dotted var(--dark4) 1px;
     
     transition: font-weight 100ms ease-in-out;
 }
